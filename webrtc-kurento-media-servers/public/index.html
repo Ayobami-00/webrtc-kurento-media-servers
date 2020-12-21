@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebRTC Kurento SFU Multiparty</title>
+    <style>
+        #meetingRoom div {
+            text-align: center;
+        }
+
+        .videoContainer {
+            float: left;
+        }
+
+        #meetingRoom:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WebRTC Kurento SFU Multiparty< /h1>
+            <div id="roomSelection" style="display: block">
+                <label>Type User Name</label>
+                <input id="name" type="text"></input>
+                <label id="Type Room Name"></label>
+                <input id="room" type="text"></input>
+                <button id="register">Enter</button>
+            </div>
+
+            <div id="meeetingRoom" style="display: none"></div>
+
+            <script src="adapter-latest.js"></script>
+            <script src="kurento-utils.min.js"></script>
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="client.js"></script>
+</body>
+
+</html>
