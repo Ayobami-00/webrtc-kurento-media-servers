@@ -1,5 +1,5 @@
 const express = require('express')
-const app = expres()
+const app = express()
 let http = require('http').Server(app)
 let mimimist = require('minimist')
 let io = require('socket.io')(http)
